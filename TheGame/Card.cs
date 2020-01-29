@@ -29,7 +29,7 @@ namespace TheGame
             card.FontSize = 20;     // ustawienie wielkości czcionki na 20px (potrzebne dla lepszej widoczności dla wskazówek)
             card.FontWeight = FontWeights.UltraBold;    // pogrubienie czcionki znajdującej sie na przycisku 
             card.Background = new SolidColorBrush(Colors.LightGray); // nadanie domyślnego koloru tła przycisku jako LightGray
-            //card.AddHandler(Button.ClickEvent, new RoutedEventHandler(gameLogic.Reveal_card)); <- to jest zbędne aczkolwiek służy jako wywołanie zdalnej metody podczas wywołania zdarzenia (kliknięcie) 
+            //card.AddHandler(Button.ClickEvent, new RoutedEventHandler(gameLogic.RevealCard)); <- to jest zbędne aczkolwiek służy jako wywołanie zdalnej metody podczas wywołania zdarzenia (kliknięcie) 
 
             return card;
         }

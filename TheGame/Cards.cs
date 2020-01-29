@@ -48,7 +48,7 @@ namespace TheGame
         /// Metoda odpowiedzialna za przekazanie użytkownikowi listy kart
         /// </summary>
         /// <returns>zwracamy listę kart</returns>
-        public List<Button> Deck_of_cards()
+        public List<Button> DeckOfCards()
         {
             return cardList;
         }
