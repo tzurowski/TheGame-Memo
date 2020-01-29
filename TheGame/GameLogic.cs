@@ -16,8 +16,8 @@ namespace TheGame
         Cards deck; // deklaracja odwołania do obiektu klasy Cards
         GameGrid gameGrid;  // deklaracja odwołania do obiektu klasy GameGrid
         Button[] clickedCards = new Button[10]; // stworzenie tablicy do zapisywania ile kart kliknięto (wystarczy tablica 3/4 elementowa ponieważ służy tylko do zapisu kart klikniętych w danej turze
-        bool isFirstClick = true;   // stworzenie zmiennej odpowiedzialnej za informację czy w naszej turze kliknięta karta jest pierwszą naszą klikniętą kartą
-        bool isSecondClick = false; // stworzenie zmiennej odpowiedzialnej za informację czy w naszej turze kliknięta karta jest drugą naszą klikniętą kartą
+        private bool isFirstClick = true;   // stworzenie zmiennej odpowiedzialnej za informację czy w naszej turze kliknięta karta jest pierwszą naszą klikniętą kartą
+        private bool isSecondClick = false; // stworzenie zmiennej odpowiedzialnej za informację czy w naszej turze kliknięta karta jest drugą naszą klikniętą kartą
         private int result = 0;     // stworzenie zmiennej odpowiedzialnej za zliczanie znalezionych par
         private int counter = 0;    // stworzenie zmiennej odpowiedzialnej za zliczanie wykonanych ruchów
         private int i = 0;  // stworzenie zmiennej odpowiedzialnej za rozpoznanie którą kartę kliknęliśmy
@@ -73,6 +73,10 @@ namespace TheGame
             { Open_card(1); i = 0; goto Koniec; }   //idziemy do etykiety Koniec
         Koniec:;    // etykieta Koniec
         }
+
+        /// <summary>
+        /// Metoda odpowiedzialna za sprawdzenie czy odkryte karty są takie same
+        /// </summary>
         private void CheckCards()
         {
             // sprawdzamy czy tła dwóch wybranych kart są takie same

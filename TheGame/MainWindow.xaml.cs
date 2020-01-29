@@ -20,13 +20,13 @@ namespace TheGame
     /// </summary>
     public partial class MainWindow : Window
     {
-        GameGrid game;
+        GameGrid game;  // deklaracja obiektu klasy GameGrid
         public MainWindow()
         {
-            InitializeComponent();
-            game = new GameGrid(this);
-            game.Create_grid();
-            game.Show_hints();
+            InitializeComponent();  // metoda odpowiedzialna za stworzenie okna aplikacji (systemowa metoda)
+            game = new GameGrid(this);  // stworzenie obiektu klasy GameGrid
+            game.CreateGrid(); // stworzenie siatki do gry
+            game.Show_hints(); // pokazanie podpowiedzi na kartach
             
         }
     }
