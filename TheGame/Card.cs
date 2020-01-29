@@ -10,21 +10,28 @@ using System.Windows.Media;
 namespace TheGame
 {
     class Card
-    {
-        Button card;
+    {   
+        Button card;    //Deklaracja odwołania do obiektu klasy Button
 
+        /// <summary>
+        /// Metoda klasy Card odpowiedzialna za stworzenie pojedyńczej karty
+        /// </summary>
+        /// <param name="buttonID">indywidualny numer identyfikujący przycisk</param>
+        /// <param name="width">szerokość przycisku, domyślnie 100</param>
+        /// <param name="height">wysokość przycisku, domyślnie 100</param>
+        /// <returns></returns>
         public Button Create_card(int buttonID, int width = 100, int height = 100)
         {
-            card = new Button();
-            card.Width = width;
-            card.Height = height;
-            card.Name = $"btn{buttonID}";
-            card.FontSize = 20;
-            card.FontWeight = FontWeights.UltraBold;
-            card.Background = new SolidColorBrush(Colors.LightGray);
-            //card.AddHandler(Button.ClickEvent, new RoutedEventHandler(gameLogic.Reveal_card));
+            card = new Button();    // stworzenie nowego obiektu klasy Button (tworzenie przycisku/karty)
+            card.Width = width;     // nadanie przyciskowi szerokości przesłanej do metody jako parametr  
+            card.Height = height;   // nadanie przyciskowi wysokości przesłanej do metody jako parametr
+            card.Name = $"btn{buttonID}";   // nadanie nazwy nowo stworzonemu przyciskowi (np. btn1, gdzie 1 to przesłane ID do metody)
+            card.FontSize = 20;     // ustawienie wielkości czcionki na 20px (potrzebne dla lepszej widoczności dla wskazówek)
+            card.FontWeight = FontWeights.UltraBold;    // pogrubienie czcionki znajdującej sie na przycisku 
+            card.Background = new SolidColorBrush(Colors.LightGray); // nadanie domyślnego koloru tła przycisku jako LightGray
+            //card.AddHandler(Button.ClickEvent, new RoutedEventHandler(gameLogic.Reveal_card)); <- to jest zbędne aczkolwiek służy jako wywołanie zdalnej metody podczas wywołania zdarzenia (kliknięcie) 
 
-            return card;
+            return card; // zwracamy stworzoną kartę (przycisk)
         }
         
     }
