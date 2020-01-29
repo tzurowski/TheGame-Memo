@@ -11,6 +11,9 @@ using System.Windows.Threading;
 
 namespace TheGame
 {
+    /// <summary>
+    /// Klasa odpowiedzialna za całą logikę gry czyli odkrywanie kart po kliknięciu, sprawdzanie kart czy do siebie pasują i jesli nie to zakrycie ich spowrotem oraz za zliczanie odnalezionych par i wykonanych ruchów
+    /// </summary>
     class GameLogic
     {
         Cards deck; // deklaracja odwołania do obiektu klasy Cards

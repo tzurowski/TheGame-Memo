@@ -8,6 +8,9 @@ using System.Windows.Media;
 
 namespace TheGame
 {
+    /// <summary>
+    /// Klasa odpowiedzialna za stworzenie podpowiedzi do gry na zasadzie oznaczenia tymi samymi numerkami kart o tym samym kolorze 
+    /// </summary>
     class Hints
     {
         Cards deck; // deklaracja odwołania do obiektu klasy Card

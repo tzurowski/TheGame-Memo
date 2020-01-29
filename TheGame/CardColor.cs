@@ -11,6 +11,10 @@ using System.Windows;
 
 namespace TheGame
 {
+
+    /// <summary>
+    /// Klasa odpowiedzialna za stworzenie listy losowych kolorów
+    /// </summary>
     class CardColor
     {
         List<SolidColorBrush> colorList;    // deklaracja odwołania do listy kolorów

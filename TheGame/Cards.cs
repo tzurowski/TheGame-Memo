@@ -9,6 +9,9 @@ using System.Windows.Media;
 
 namespace TheGame
 {
+    /// <summary>
+    /// Klasa odpowiedzialna za stworzenie talii kart, mozliwość odczytania tali kart, poszczególnej karty oraz listy kolorów
+    /// </summary>
     class Cards
     {
         public Card card;   // deklaracja odwołania do obiektu klasy Card

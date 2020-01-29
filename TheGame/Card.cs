@@ -9,6 +9,10 @@ using System.Windows.Media;
 
 namespace TheGame
 {
+
+    /// <summary>
+    /// Klasa odpowiedzialna za stworzenie pojedyńczej karty o podstawowych parametrach
+    /// </summary>
     class Card
     {   
         Button card;    // deklaracja odwołania do obiektu klasy Button

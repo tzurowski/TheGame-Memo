@@ -9,6 +9,14 @@ using static System.Math;
 
 namespace TheGame
 {
+    /// <summary>
+    /// Klasa odpowiedzialna za:
+    /// - stworzenie siatki (kolumny i wiersze)
+    /// - nałożenie kart na siatkę
+    /// - pokzanie siatki w oknie aplikacji
+    /// - stworzenie kontrolek dla pola statystyk
+    /// - wywołanie podpowiedzi
+    /// </summary>
     class GameGrid
     {
         private const int defaultNumberOfFields = 16;   // stworzenie zmiennej odpowiedzialnej za domyślną ilość pól

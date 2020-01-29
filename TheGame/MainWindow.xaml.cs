@@ -16,7 +16,8 @@ using System.Windows.Shapes;
 namespace TheGame
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Klasa odpowiedzilana za wywołanie gotwych elementów
+    /// tj. siatki i podpowiedzi
     /// </summary>
     public partial class MainWindow : Window
     {
