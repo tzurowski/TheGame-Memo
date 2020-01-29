@@ -10,31 +10,38 @@ namespace TheGame
 {
     class Hints
     {
-        Cards deck;
-        GameGrid gameGrid;
+        Cards deck; // deklaracja odwołania do obiektu klasy Card
+        GameGrid gameGrid;  // deklaracja odwołania do obiektu klasy GameGrid
 
+
+        /// <summary>
+        /// Konstruktor odpowiedzialny za umożliwenie dostępu klasie Hints do klass GameGrid i Cards
+        /// </summary>
+        /// <param name="grid">obiekt klasy GameGrid</param>
+        /// <param name="pack">obiekt klasy Cards</param>
         public Hints(GameGrid grid, Cards pack)
         {
-            gameGrid = grid;
+            gameGrid = grid; 
             deck = pack;
         }
 
-        public void Create_hints()
+        /// <summary>
+        /// Metoda odpowiedzialna za stworzenie podpowiedzi na planszy
+        /// </summary>
+        public void CreateHints()
         {
-            int hint = 1;
+            int hint = 1;   // stworzenie i zainicjalizowanie zmiennej odpowiedzialnej za pojedyńczą podpowiedź
+            //pętle odpowiedzialne za przeszukanie listy kolorów w poszukiwaniu par kolorów, w wypadku ich znalezienia ma oznaczyć karty o tych samych indeksach tą samą cyfrą
             for (int i = 0; i < gameGrid.AmountOfCards; i++)
             {
                 for (int j = i + 1; j < gameGrid.AmountOfCards; j++)
                 {
-                    if (deck.List_of_colors()[i] == deck.List_of_colors()[j])
+                    if (deck.ListOfColors()[i] == deck.ListOfColors()[j])
                     {
-                        deck.OneOfCards(i).Content = hint;
-                        deck.OneOfCards(j).Content = hint;
-                        hint++;
+                        deck.OneOfCards(i).Content = hint;  // przypisanie podpowiedzi do karty (przycisku)
+                        deck.OneOfCards(j).Content = hint;  // przypisanie podpowiedzi do karty (przycisku)
+                        hint++; // zmiana cyfry podpowiedzi
                     }
-                    //(deck.OneOfCards(i).Content == deck.OneOfCards(j).Content) &&
-                    //   ((deck.OneOfCards(i).Content == null) && (deck.OneOfCards(j).Content == null)) &&
-                    //    (deck.OneOfCards(i).Foreground == deck.OneOfCards(j).Foreground)
 
                 }
             }

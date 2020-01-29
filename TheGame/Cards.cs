@@ -57,7 +57,7 @@ namespace TheGame
         /// Metoda odpowiedzialna za przekazanie użytkownikowi listy kolorów
         /// </summary>
         /// <returns>zwracamy listę kolorów</returns>
-        public List<SolidColorBrush> List_of_colors()
+        public List<SolidColorBrush> ListOfColors()
         {
             return colorList;
         }

@@ -90,7 +90,7 @@ namespace TheGame
                     if (clickedCards[u].Name == item.Name)
                         cardID = deck.Deck_of_cards().IndexOf(item);
                 }
-                deck.OneOfCards(cardID).Background = deck.List_of_colors()[cardID];
+                deck.OneOfCards(cardID).Background = deck.ListOfColors()[cardID];
             }
         }
 

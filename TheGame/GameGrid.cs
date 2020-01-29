@@ -157,7 +157,7 @@ namespace TheGame
         public void Show_hints()
         {
             Hints hints = new Hints(this, cards);
-            hints.Create_hints();
+            hints.CreateHints();
         }
     }
 }
