@@ -28,13 +28,13 @@ namespace TheGame
                 {
                     if (deck.List_of_colors()[i] == deck.List_of_colors()[j])
                     {
-                        deck.One_of_cards(i).Content = hint;
-                        deck.One_of_cards(j).Content = hint;
+                        deck.OneOfCards(i).Content = hint;
+                        deck.OneOfCards(j).Content = hint;
                         hint++;
                     }
-                    //(deck.One_of_cards(i).Content == deck.One_of_cards(j).Content) &&
-                    //   ((deck.One_of_cards(i).Content == null) && (deck.One_of_cards(j).Content == null)) &&
-                    //    (deck.One_of_cards(i).Foreground == deck.One_of_cards(j).Foreground)
+                    //(deck.OneOfCards(i).Content == deck.OneOfCards(j).Content) &&
+                    //   ((deck.OneOfCards(i).Content == null) && (deck.OneOfCards(j).Content == null)) &&
+                    //    (deck.OneOfCards(i).Foreground == deck.OneOfCards(j).Foreground)
 
                 }
             }

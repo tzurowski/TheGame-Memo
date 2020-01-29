@@ -97,9 +97,9 @@ namespace TheGame
             {
                 for (int j = 1; j <= AmountOfRows; j++, id++)
                 {
-                    Grid.SetRow(cards.One_of_cards(id), i);
-                    Grid.SetColumn(cards.One_of_cards(id), j);
-                    gameGrid.Children.Add(cards.One_of_cards(id));
+                    Grid.SetRow(cards.OneOfCards(id), i);
+                    Grid.SetColumn(cards.OneOfCards(id), j);
+                    gameGrid.Children.Add(cards.OneOfCards(id));
                 }
             }
         }

@@ -11,7 +11,7 @@ namespace TheGame
 {
     class Card
     {   
-        Button card;    //Deklaracja odwołania do obiektu klasy Button
+        Button card;    // deklaracja odwołania do obiektu klasy Button
 
         /// <summary>
         /// Metoda klasy Card odpowiedzialna za stworzenie pojedyńczej karty
@@ -19,8 +19,8 @@ namespace TheGame
         /// <param name="buttonID">indywidualny numer identyfikujący przycisk</param>
         /// <param name="width">szerokość przycisku, domyślnie 100</param>
         /// <param name="height">wysokość przycisku, domyślnie 100</param>
-        /// <returns></returns>
-        public Button Create_card(int buttonID, int width = 100, int height = 100)
+        /// <returns>zwracamy stworzoną kartę (przycisk), obiekt klasy Button</returns>
+        public Button CreateCard(int buttonID, int width = 100, int height = 100)
         {
             card = new Button();    // stworzenie nowego obiektu klasy Button (tworzenie przycisku/karty)
             card.Width = width;     // nadanie przyciskowi szerokości przesłanej do metody jako parametr  
@@ -31,7 +31,7 @@ namespace TheGame
             card.Background = new SolidColorBrush(Colors.LightGray); // nadanie domyślnego koloru tła przycisku jako LightGray
             //card.AddHandler(Button.ClickEvent, new RoutedEventHandler(gameLogic.Reveal_card)); <- to jest zbędne aczkolwiek służy jako wywołanie zdalnej metody podczas wywołania zdarzenia (kliknięcie) 
 
-            return card; // zwracamy stworzoną kartę (przycisk)
+            return card;
         }
         
     }
